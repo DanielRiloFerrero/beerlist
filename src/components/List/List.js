@@ -20,10 +20,9 @@ const List = () => {
         .then(async (response) => {
           if (response.ok) {
             const data = await response.json();
-            console.log("data: ", data);
             setBearList(data);
           } else {
-            throw new Error("Hubo un problema con la petición Fetch");
+            throw new Error("There was an error with the Fetch");
           }
         })
         .catch((err) => setErrorMsg(err.message))

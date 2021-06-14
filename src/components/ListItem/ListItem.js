@@ -3,8 +3,6 @@ import { Modal, Row, Col, Image } from "react-bootstrap";
 import styles from "./ListItem.module.scss";
 
 const ListItem = (props) => {
-  console.log("props: ", props);
-
   return (
     <>
       {props.elementToShow && (
@@ -22,7 +20,9 @@ const ListItem = (props) => {
             </div>
             <Row>
               {props.elementToShow.description ? (
-                <Col xs={12} className="mb-4">{props.elementToShow.description}</Col>
+                <Col xs={12} className="mb-4">
+                  {props.elementToShow.description}
+                </Col>
               ) : (
                 ""
               )}
