@@ -6,7 +6,7 @@ const ListItem = (props) => {
   return (
     <>
       {props.elementToShow && (
-        <Modal show={props.show} onHide={props.toggleModal}>
+        <Modal show={props.show} onHide={props.toggleModal} animation={false}>
           <Modal.Header closeButton className="py-2">
             <Modal.Title>{props.elementToShow.name}</Modal.Title>
           </Modal.Header>
