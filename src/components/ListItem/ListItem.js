@@ -28,7 +28,7 @@ const ListItem = (props) => {
               )}
 
               <Col xs={12} md={6}>
-                <span className="font-weight-bold">Fisrt Brewed:</span>{" "}
+                <span className="font-weight-bold">First Brewed:</span>{" "}
                 {props.elementToShow.first_brewed
                   ? props.elementToShow.first_brewed
                   : "N/A"}
